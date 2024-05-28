@@ -1,0 +1,109 @@
+
+
+*{  
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+body{ 
+    background-color: #566814;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+    
+}
+.container{ 
+    background-image:linear-gradient(#be1515,#fff);
+    width:90%;
+    max-width: 400px;
+    text-align: center;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(9, 5, 216, 0.1);
+}
+h1{
+    color:#ecd4d4;
+    font-style: oblique;
+    text-shadow:0 0 10px rgba(78, 8, 241, 0.5) ;
+}
+h6{
+    color:rgb(35, 228, 115) ;
+}
+p{font-weight: 700;
+    color:rgb(35, 228, 115) ;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    font-size:16px;
+    margin: 10px 0;
+    border-radius: 1rem; box-shadow: 0 0 5px rgba(8, 238, 169, 0.979);
+    border:2px outset rgb(41, 197, 106)  
+}
+button{
+    color:#fff; 
+    background-color: rgb(41, 197, 106);
+    font-size: 16px;
+    width:85%;
+    padding:10px 0;
+    margin-top: 10px;
+    cursor:pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 2s;
+}
+button:hover{
+    background-color: #566814;
+}
+#message{
+    font-size:16px;
+    margin-top:10px;
+    color:#555;
+    animation: displayMessage 2s infinite ease-in-out;
+}
+  #chances_left{
+    transition: background-color 2s ;
+   background-color:  rgb(41, 197, 106);
+} 
+#chances_left p:hover{background-color:blue;}
+@keyframes displayMessage{
+from {transform: scale(50deg);
+}
+to{
+    transform: scale(150deg);
+  
+}}
+#restartGame{
+    display: none;
+}
+@media (max-width:600px){
+    .container{
+        padding: 15px;
+    }
+    h1{
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    
+    .instruction h6,.instruction p{
+        font-size: 0.625rem;
+        width:100%;
+    }
+    input,button{
+        width:100%;
+        font-size:14px;
+    }
+    button{
+        padding:8px 0;
+    }
+    #message,#chances_left{
+        font-size: 16px;
+    }
+
+
+}

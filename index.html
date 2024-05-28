@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the hidden number</h1>
+        <div class="instruction"> 
+            <h6>INSTRUCTIONS:</h6>
+            <p>Think of a number between 1 and 100</p>
+            <p>You have 3 attempt to attempt</p>
+        </div>
+       <div class="game_board">
+            <input type="number" id="guess_input" placeholder="Enter your guess">
+            <button id="submit_guess">Submit guess</button>
+            <p id="message"></p>
+            <p id="chances_Left"></p>
+            <button id="restartGame">Restart Game</button>
+        </div>
+
+    </div>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
