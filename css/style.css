@@ -1,5 +1,4 @@
 
-
 *{  
     padding: 0;
     margin:0;
@@ -14,8 +13,6 @@ body{
     justify-content: center;
     align-items: center;
   
-   
-    
 }
 .container{ 
     background-image:linear-gradient(#be1515,#fff);

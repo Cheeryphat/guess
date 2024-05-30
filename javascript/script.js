@@ -1,29 +1,17 @@
-// //globalvariables
-// const guessInput = document.querySelector('#guess_input');
-// const submitGuess = document.querySelector('#submit_guess');
-// const message = document.querySelector('#message');
-// const chancesLeft =document.querySelector('#chances_Left');
-// const restartGame = document.querySelector('#restartGame');
-// // random number guessing 1-100
-
-// let randomNumber =Math.floor(Math.random()*100) + 1;
-// // No of Chances
-// let chances = 3;
+//globalvariables
+const guessInput = document.querySelector('#guess_input');
+const submitGuess = document.querySelector('#submit_guess');
+const message = document.querySelector('#message');
+const chancesLeft =document.querySelector('#chances_Left');
+const restartGame = document.querySelector('#restartGame');
+// random number guessing 1-100
+let randomNumber =Math.floor(Math.random()*100) + 1;
+// No of Chances
+let chances = 3;
 
 //Interacting with the DOM
 document.addEventListener('DOMContentLoaded',()=>{
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
-// No of Chances
-let chances = 3;
-    const guessInput = document.getElementById('guess_input');
-const submitGuess = document.getElementById('submit_guess');
-const message = document.getElementById('message');
-const chancesLeft =document.getElementById('chances_Left');
-const restartGame = document.getElementById('restartGame');
-
-
-   
-    //CHANCES LEFT ALERT
+       //CHANCES LEFT ALERT
     chancesLeft.textContent = `Chances left: ${chances}`;
     //GUESS SUBMISSION START
     submitGuess.addEventListener('click',() => {
@@ -38,6 +26,7 @@ const restartGame = document.getElementById('restartGame');
         chances--;
         // Comparing userGuess and randomNumber
         if (userGuess === randomNumber){
+            
             message.textContent ='Congratulation! you guessed the correct number!'
             endGame();
         }else if (chances === 0){
@@ -46,7 +35,6 @@ const restartGame = document.getElementById('restartGame');
             endGame();
         }else{
             message.textContent =  userGuess < randomNumber ?'Too low':'Too high';
-           // chancesLeft.style.color="green";
             chancesLeft.textContent =`Chances left:${chances}`;
             
         }
@@ -65,6 +53,7 @@ const restartGame = document.getElementById('restartGame');
         restartGame.style.display ='none';
     }); //RESTARTING THE GAME ENDS
     function endGame(){
+        
         submitGuess.style.display = 'none';
         guessInput.style.display ='none';
         restartGame.style.display ='inline';
