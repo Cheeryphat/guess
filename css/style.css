@@ -2,7 +2,7 @@
 *{  
     padding: 0;
     margin:0;
-    box-sizing: border-box;
+    box-vsizing: border-box;
 
 }
 body{ 
@@ -24,9 +24,11 @@ body{
     box-shadow: 0 0 10px rgba(9, 5, 216, 0.1);
 }
 h1{
-    color:#ecd4d4;
+     color:#ecd4d4;
+   text-transform:uppercase;
+   font-weight: bolder;
     font-style: oblique;
-    text-shadow:0 0 10px rgba(78, 8, 241, 0.5) ;
+    text-shadow:0 0 10px rgba(78, 8, 241, 0.5);
 }
 h6{
     color:rgb(35, 228, 115) ;
@@ -39,8 +41,18 @@ input{
     padding: 10px;
     font-size:16px;
     margin: 10px 0;
-    border-radius: 1rem; box-shadow: 0 0 5px rgba(8, 238, 169, 0.979);
+    border-radius: 1rem; 
+    box-shadow: 0 0 5px rgba(8, 238, 169, 0.979);
     border:2px outset rgb(41, 197, 106)  
+}
+input:hover{
+    border: 3px groove rgb(41, 197, 106)   ;
+
+    box-shadow: 5px 5px 5px rgba(113, 236, 119, 0.1);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    appearance: none;
 }
 button{
     color:#fff; 
