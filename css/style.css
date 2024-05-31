@@ -24,11 +24,9 @@ body{
     box-shadow: 0 0 10px rgba(9, 5, 216, 0.1);
 }
 h1{
-<<<<<<< HEAD
-    color:#ecd4d4;
-=======
+
      color:#ecd4d4;
->>>>>>> 73a859db6ca7a390717caecc5be3ea9a7e0079e4
+
    text-transform:uppercase;
    font-weight: bolder;
     font-style: oblique;
@@ -57,10 +55,6 @@ input:hover{
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button{
     appearance: none;
-<<<<<<< HEAD
-
-=======
->>>>>>> 73a859db6ca7a390717caecc5be3ea9a7e0079e4
 }
 button{
     color:#fff; 
